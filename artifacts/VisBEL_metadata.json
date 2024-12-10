@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Visbel.sol": "VisBEL"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Visbel.sol": {
+			"keccak256": "0x00af7daf6af4f254ed17492c621cf8ce6ae9c2a012dc3ad1ea436d9ab05aa0a7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2eb5edd1add97590095379cb72acacd05e78d2896540b8827c23423cf908d863",
+				"dweb:/ipfs/QmewQcbkFo1U59v1Bo4QjH1Uwvaymxry66Wo4rMeUBXXkc"
+			]
+		}
+	},
+	"version": 1
+}
