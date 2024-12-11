@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "start",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"StoreType.sol": "StoreType"
+			"StoreType.sol": "Counter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

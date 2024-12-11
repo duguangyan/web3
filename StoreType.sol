@@ -32,7 +32,33 @@ contract person {
     }
 
     function changeGender(uint value) external  {
-        state.gender = value == 0 ? unicode"男": unicode"女";
+        // require(condition); 退回gas
+        require(value == 0 || value == 1, 'person input value error, it is only 0 or 1');
+        state.gender = value == 0 ? unicode"男" : unicode"女";
+        // assert(condition); 不退回gas
+    }
+
+}
+
+
+contract Counter {
+
+    function start() external pure returns (uint sum) {
+
+        uint a1 = 1;
+        uint a2 = 1;
+        uint a3 = 1;
+        uint a4 = 1;
+        uint a5 = 1;
+        // uint a6 = 1;
+        // uint a7 = 1;
+        // uint a8 = 1;
+        // uint a9 = 1;
+        // uint a10 = 1;
+
+        sum = a1 + a2 + a3 + a4 + a5;
+        return sum;
+
     }
 
 }

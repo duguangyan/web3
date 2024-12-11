@@ -121,11 +121,11 @@
 	},
 	"sources": {
 		"StoreType.sol": {
-			"keccak256": "0xadcf5fe63ea58e9b76238235df03092f61fb9be80e32ef52366d72c185b2dcba",
+			"keccak256": "0xaae6eefe9fc3d5e7f07093c4663dcb2462e1f8e539fa6c206c46f1a8a69b8f4a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0ba37912f9e565180b14c86905e38bfdf3735e49a808222857b05e56aefdf032",
-				"dweb:/ipfs/Qmaud2tZ4QJqVufwP8hQDPP6EnuhWgipX553wYNkKPWZG2"
+				"bzz-raw://1e9ec6ff71d488072b028d2de712d5afff83edc3690a740f953016ac6fb8d4c0",
+				"dweb:/ipfs/QmQijWRv4CFtvWTXyaFS5oe8nXTGYDk1KTk7ET97rZhZxa"
 			]
 		}
 	},
