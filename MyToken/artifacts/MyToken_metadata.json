@@ -14,6 +14,54 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "_owner",
 						"type": "address"
 					}
@@ -104,6 +152,35 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -142,11 +219,11 @@
 			]
 		},
 		"MyToken/MyToken.sol": {
-			"keccak256": "0xa7ec5f399936614c2e7eb74a86b535c51abc2682b9657de11e3d1cd1912c2b72",
+			"keccak256": "0xaebd7bd1e156820bd105d3aa71eddba51649035d14a17e759824f5150125b60b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://61ce2d3e35f80d359462e5a101a6af836bf02927d8138d75743f2a9738712d90",
-				"dweb:/ipfs/QmcXQxhL2kx61F1YGkCZBh2BUZn2k66oQ9bjErUDvZHQpC"
+				"bzz-raw://d73312c6c33f620ade1378b3c03443e87224562c0672cbf155136efc4cdcf278",
+				"dweb:/ipfs/QmNuuTE9yVQiadPNLss94svoPbFVsMmBmG3enYvthtGeze"
 			]
 		}
 	},

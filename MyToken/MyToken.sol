@@ -55,19 +55,42 @@ contract MyToken is Context {
         return _balances[_owner];
     }
 
+    // 返回授权代币数量 allowanceOf()
+    function allowanceOf(address owner, address spender) public view returns (uint256) {
+        return _allowance[owner][spender];
+    }
+
+
     // - 4、函数 -
     // 代币转发
     function transfer(address to, uint256 amount) public returns (bool success){
         
         address owner = _msgSender();
         _transfer(owner,to,amount);
+        return true;
+    }
+
+    // 授权代币的转发   
+    function approve(address spender, uint256 amount) public returns (bool success) {
+        // 银行授权给我（银行要贷款给我）
+        address owner = _msgSender();
+        // owner 授权人 
+        // spender 被授权人
+
+        _approve(owner, spender, amount);
 
         return true;
     }
 
-    // - 合约内部函数 -
-    function _mint (address account , uint256 amount) internal {
 
+    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success){
+
+    }
+    // - 5、事件 -
+
+
+    // - 6、合约内部函数 -
+    function _mint (address account , uint256 amount) internal {
         require(account != address(0), "ERC20: mint to the zero address");
         // 初始化货币数量
         _totalSupply += amount;
@@ -76,6 +99,7 @@ contract MyToken is Context {
             _balances[account] += amount;
         }
     }
+
     // 转账
     function _transfer(address from, address to, uint256 amount) internal  {
         require(from != address(0), "ERC20: transfer from the zero address");
@@ -87,6 +111,13 @@ contract MyToken is Context {
             _balances[from] -= amount;
             _balances[to] += amount;
         }
+    }
+
+    // 授权
+    function _approve(address owner, address spender, uint256 amount) internal {
+        require(owner != address(0), "ERC20: approve owner the zero address");
+        require(spender != address(0), "ERC20: approve spender the zero address");
+        _allowance[owner][spender] = amount;
     }
 
     /*
@@ -115,5 +146,25 @@ contract MyToken is Context {
             }
         }
     */
+
+    /*
+        主体：借贷人，中介公司 房屋出售者 account
+        授权：贷款人（银行） 借钱给我 approve 100W
+        提款: 从银行贷款账户里提钱给自己 1W
+        支付房款：借款人转账给房屋出售者 transferFrom 90W
+        支付佣金：借款人转账中介公司 10W
+    */
+
+    /*
+        {
+            0x32067D5F00c5E60B8525aBc79c0085fb572c7563：{
+                0xD922bE805c76eAB8cFCF2639Da81E0F9428c7c1d： 100W
+            }
+            0xd0b7623302Ae60AF0257307d372F786c65467335： {
+                0xd0b7623302Ae60AF0257307d372F786c65467335： 100W
+            }
+        }
+    */
+
 
 }
