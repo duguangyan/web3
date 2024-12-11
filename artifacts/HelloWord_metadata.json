@@ -4,7 +4,52 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "changeName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "saName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +63,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"StoreType.sol": "HelloWord"
+			"HelloWord.sol": "HelloWord"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +77,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"StoreType.sol": {
-			"keccak256": "0x11b89f459954b25870d2e880e659114601c0efd662a075d61bc78fbf01a00543",
+		"HelloWord.sol": {
+			"keccak256": "0xa04ef37b2cf4c64bd7d5388ebf483e27e63db0b8b906f854e114aed7c5666cdd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b36c6d0894390801473a297bbb18a2e2f951a758dcc54d69617ae97a2c257a52",
-				"dweb:/ipfs/QmSPw92emRdiRGeoDB15gwWzwidXhCPpozcLF3UUc41wsE"
+				"bzz-raw://a51a24175fc17760233d76d4ecab73bdd9200961b6ddaf627e106154dbdce30a",
+				"dweb:/ipfs/QmdKzV2gss8EefuQUanUJqjEZznntFt4yKtS5oiSTWUKMp"
 			]
 		}
 	},

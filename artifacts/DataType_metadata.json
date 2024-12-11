@@ -130,11 +130,11 @@
 	},
 	"sources": {
 		"DataTypesol.sol": {
-			"keccak256": "0x4dac7306b633130e7383c93911d7ac645caa926643d1ca1bd1d5ea397436020d",
+			"keccak256": "0xff315a25a07376a1b0a20947c44a0a28580dda92492cd24b191c4c5b814078a4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6a782c7f87086655b37616144cf2c6b9d9810e8cf8bb6cf68a6f63810d3e93c5",
-				"dweb:/ipfs/Qmc1oeDKR8ExFmsA2vrpKr5KC6Tvj4tbLgxxwVKz2H2BH6"
+				"bzz-raw://f526a601020a409de7cb401c93df2b195a879b13a72a3ffe789a0093ced8f404",
+				"dweb:/ipfs/QmW2PuRedXh3YqdEgh5C7BgFzbAzV9E7C7fSpnBkT4ngJ9"
 			]
 		}
 	},
