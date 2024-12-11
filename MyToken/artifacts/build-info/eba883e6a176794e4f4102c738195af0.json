@@ -1,0 +1,434 @@
+{
+	"id": "eba883e6a176794e4f4102c738195af0",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"MyToken/Context.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n// 智能合约的许可证\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\ncontract Context {\r\n    function _msgSender() internal view returns (address) {\r\n        return  msg.sender;\r\n    }\r\n\r\n    \r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"MyToken/Context.sol": {
+				"Context": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"MyToken/Context.sol\":97:225  contract Context {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"MyToken/Context.sol\":97:225  contract Context {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220b2849c53fd5a15ec79cf426fd5b37325452b7305eff91515bc446496a351351264736f6c634300081a0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea2646970667358221220b2849c53fd5a15ec79cf426fd5b37325452b7305eff91515bc446496a351351264736f6c634300081a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xB2 DUP5 SWAP13 MSTORE8 REVERT GAS ISZERO 0xEC PUSH26 0xCF426FD5B37325452B7305EFF91515BC446496A351351264736F PUSH13 0x634300081A0033000000000000 ",
+							"sourceMap": "97:128:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "60806040525f80fdfea2646970667358221220b2849c53fd5a15ec79cf426fd5b37325452b7305eff91515bc446496a351351264736f6c634300081a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xB2 DUP5 SWAP13 MSTORE8 REVERT GAS ISZERO 0xEC PUSH26 0xCF426FD5B37325452B7305EFF91515BC446496A351351264736F PUSH13 0x634300081A0033000000000000 ",
+							"sourceMap": "97:128:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12400",
+								"executionCost": "64",
+								"totalCost": "12464"
+							},
+							"internal": {
+								"_msgSender()": "infinite"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 97,
+									"end": 225,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220b2849c53fd5a15ec79cf426fd5b37325452b7305eff91515bc446496a351351264736f6c634300081a0033",
+									".code": [
+										{
+											"begin": 97,
+											"end": 225,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 97,
+											"end": 225,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 97,
+											"end": 225,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 97,
+											"end": 225,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 97,
+											"end": 225,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 97,
+											"end": 225,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"MyToken/Context.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"MyToken/Context.sol\":\"Context\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"MyToken/Context.sol\":{\"keccak256\":\"0x9208e1bd7da34cb971d697cdae6ce2d47329c3a8d0c6ee220a2f10892619649e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://25547873a64c3ecc61fa33d65ad16f69ae2f6cc1be3cd0c813b8d6b71c0f5b1b\",\"dweb:/ipfs/QmVfEbCwKo3uua5qG5wCcZeKV32WSXKK8jYsLX4m3z5rbq\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"MyToken/Context.sol": {
+				"ast": {
+					"absolutePath": "MyToken/Context.sol",
+					"exportedSymbols": {
+						"Context": [
+							11
+						]
+					},
+					"id": 12,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "62:31:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Context",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 11,
+							"linearizedBaseContracts": [
+								11
+							],
+							"name": "Context",
+							"nameLocation": "106:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": {
+										"id": 9,
+										"nodeType": "Block",
+										"src": "175:37:0",
+										"statements": [
+											{
+												"expression": {
+													"expression": {
+														"id": 6,
+														"name": "msg",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 4294967281,
+														"src": "194:3:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_magic_message",
+															"typeString": "msg"
+														}
+													},
+													"id": 7,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"memberLocation": "198:6:0",
+													"memberName": "sender",
+													"nodeType": "MemberAccess",
+													"src": "194:10:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"functionReturnParameters": 5,
+												"id": 8,
+												"nodeType": "Return",
+												"src": "186:18:0"
+											}
+										]
+									},
+									"id": 10,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "_msgSender",
+									"nameLocation": "130:10:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "140:2:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 4,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 10,
+												"src": "166:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 3,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "166:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "165:9:0"
+									},
+									"scope": 11,
+									"src": "121:91:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "internal"
+								}
+							],
+							"scope": 12,
+							"src": "97:128:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "62:163:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
